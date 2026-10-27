@@ -1,0 +1,36 @@
+{
+  "seed": 42,
+  "data": {
+    "root": "data/chest_xray",
+    "image_size": 64,
+    "channels": 1,
+    "num_workers": 0,
+    "validation_fraction": 0.1
+  },
+  "model": {
+    "latent_dim": 128
+  },
+  "training": {
+    "device": "mps",
+    "batch_size": 64,
+    "epochs": 30,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "beta": 0.1,
+    "reconstruction_loss": "bce_with_logits",
+    "output_dir": "outputs/beta_0p1"
+  },
+  "generation": {
+    "seed": 123,
+    "grid_samples": 64
+  },
+  "evaluation": {
+    "real_split": "test",
+    "sample_count": "match_real_split",
+    "seed": 456,
+    "batch_size": 32,
+    "device": "cpu",
+    "implementation": "ignite_default",
+    "inception_input_size": 299
+  }
+}

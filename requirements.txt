@@ -1,0 +1,8 @@
+# Initial training environment. Install with Python 3.12 on this Mac.
+# PyTorch and torchvision are resolved together; record exact versions after setup.
+torch
+torchvision
+numpy
+matplotlib
+Pillow
+tqdm
