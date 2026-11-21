@@ -1,11 +1,4 @@
-# ECE285_FA26
-
-| Assignment | Code location |
-| --- | --- |
-| HW1 · Chest X-Ray VAE | Repository root |
-| HW2 · WikiArt GAN | [HW2/gan](HW2/gan/) |
-
-## HW1 · Chest X-Ray VAE
+# ECE285_FA26 — HW1: Chest X-Ray VAE
 
 A PyTorch convolutional variational autoencoder (VAE) for unconditional chest X-ray generation, with four experiments comparing image resolution (64 or 128 pixels) and KL weight (`beta=1` or `0.1`). NORMAL and PNEUMONIA images are pooled for training; class labels are used only for splitting, statistics, and fixed comparison examples.
 
