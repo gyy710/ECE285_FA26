@@ -13,7 +13,6 @@ kaggle.json
 /output/
 /tmp/
 /docs/superpowers/
-/HW1.png
 .env.*
 !.env.example
 /report/
